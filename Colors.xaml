@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    mc:Ignorable="d">
+
+    <Color x:Key="Main">#FF1A74B9</Color>
+    <SolidColorBrush x:Key="BRUSH_Main"
+                     Color="{StaticResource Main}" />
+
+    <Color x:Key="Green">#FF52D668</Color>
+    <SolidColorBrush x:Key="BRUSH_Green"
+                     Color="{StaticResource Green}" />
+
+    <Color x:Key="Orange">#FFFC9325</Color>
+    <SolidColorBrush x:Key="BRUSH_Orange"
+                     Color="{StaticResource Orange}" />
+
+    <Color x:Key="Red">#FFE22E2F</Color>
+    <SolidColorBrush x:Key="BRUSH_Red"
+                     Color="{StaticResource Red}" />
+
+    <Color x:Key="C4">#FF4E4E4E</Color>
+    <SolidColorBrush x:Key="BRUSH_C4"
+                     Color="{StaticResource C4}" />
+
+    <Color x:Key="C5">#FF8B8F8F</Color>
+    <SolidColorBrush x:Key="BRUSH_C5"
+                     Color="{StaticResource C5}" />
+
+    <Color x:Key="C6">#FFC7C7C7</Color>
+    <SolidColorBrush x:Key="BRUSH_C6"
+                     Color="{StaticResource C6}" />
+
+    <Color x:Key="C7">#FFE5E5E5</Color>
+    <SolidColorBrush x:Key="BRUSH_C7"
+                     Color="{StaticResource C7}" />
+
+    <Color x:Key="C8">#FFFFFFFF</Color>
+    <SolidColorBrush x:Key="BRUSH_C8"
+                     Color="{StaticResource C8}" />
+
+    <Color x:Key="White">#FFFFFFFF</Color>
+    <SolidColorBrush x:Key="BRUSH_White"
+                     Color="{StaticResource White}" />
+    
+    <Color x:Key="TransparentTouchable">#01000000</Color>
+    <SolidColorBrush x:Key="BRUSH_TransparentTouchable"
+                     Color="{StaticResource TransparentTouchable}" />
+                     
+</ResourceDictionary>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppName" xml:space="preserve">
+    <value>F-Secure Lokki</value>
+    <comment>Name of the app</comment>
+  </data>
+  <data name="Invite" xml:space="preserve">
+    <value>Inviter</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Kort</value>
+    <comment>The map button on map page.</comment>
+  </data>
+  <data name="PrivacyTextMain" xml:space="preserve">
+    <value>Beskyttelsen af dine personlige oplysninger er af største betydning for os. Inden du begynder, skal du acceptere følgende vilkår:
+    
+1. Jeg har læst vilkårene for tjenesten og accepterer dem.
+2. Jeg accepterer, at personlige data indsamles og behandles.
+3. Jeg accepterer, at tjenesten kan behandle og vise min placering.
+4. Hvis jeg er under 15, har jeg mine forældres tilladelse til at bruge Lokki i henhold til disse vilkår.
+5. Hvis jeg er under 13 og bor i USA, må jeg ikke bruge Lokki.
+    </value>
+  </data>
+  <data name="PrivacyPageTitle" xml:space="preserve">
+    <value>Erklæring om beskyttelse af personlige oplysninger</value>
+  </data>
+  <data name="PrivacyReadMoreTitle" xml:space="preserve">
+    <value>Læs mere på vores websted</value>
+  </data>
+  <data name="PrivacyReadMoreLink" xml:space="preserve">
+    <value>http://www.f-secure.com/en/web/home_global/privacy/privacy-summary</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>da</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Søg</value>
+    <comment>The hint text on search text box</comment>
+  </data>
+  <data name="SearchHelp" xml:space="preserve">
+    <value>Vælg personer, der må se din placering.
+Lokki inviterer dem via den valgte e-mail.</value>
+  </data>
+  <data name="SignupExplanation" xml:space="preserve">
+    <value>Skriv din e-mailadresse – andre Lokki-brugere kan finde dig med den samme e-mailadresse.</value>
+  </data>
+  <data name="ApiError401" xml:space="preserve">
+    <value>Af sikkerhedsmæssige årsager har vi midlertidigt sat din konto på hold. Måske har du for nylig tilmeldt dig Lokki fra en anden enhed med den samme e-mailadresse, og det tillader Lokki ikke.
+Tilmeld dig igen.</value>
+  </data>
+  <data name="SignupError" xml:space="preserve">
+    <value>Der opstod en ukendt fejl. Kontroller, den angivne e-mail er gyldig, og prøv igen senere</value>
+  </data>
+  <data name="SignupError401" xml:space="preserve">
+    <value>Af sikkerhedsmæssige årsager skal vi godkende din konto, inden du tilmelder dig igen. Følg de anvisninger, vi har sendt i en email til {0}.</value>
+  </data>
+  <data name="CanSeeMe" xml:space="preserve">
+    <value>Kan se mig</value>
+    <comment>The header in my people page</comment>
+  </data>
+  <data name="Invisible" xml:space="preserve">
+    <value>Usynlig</value>
+    <comment>Shown instead of date if user is invisible</comment>
+  </data>
+  <data name="MinutesAgo" xml:space="preserve">
+    <value>({0} minutter siden)</value>
+  </data>
+  <data name="ShowOnMap" xml:space="preserve">
+    <value>Vis på kort</value>
+    <comment>The header in my people page</comment>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>om</value>
+  </data>
+  <data name="MenuMyPeople" xml:space="preserve">
+    <value>mine personer</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>indstillinger</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Copyright 2013-2014 F-Secure Corporation. Alle rettigheder forbeholdes.</value>
+  </data>
+  <data name="MenuHelp" xml:space="preserve">
+    <value>hjælp</value>
+  </data>
+  <data name="MenuProducts" xml:space="preserve">
+    <value>F-Secure-produkter</value>
+  </data>
+  <data name="MenuTellAFriend" xml:space="preserve">
+    <value>fortæl en ven</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version: {0}</value>
+  </data>
+  <data name="WebFSecureLink" xml:space="preserve">
+    <value>http://www.f-secure.com</value>
+  </data>
+  <data name="WebFSecureTitle" xml:space="preserve">
+    <value>www.f-secure.com</value>
+  </data>
+  <data name="WebPrivacyPolicyLink" xml:space="preserve">
+    <value>http://www.f-secure.com/en/web/home_global/privacy/privacy-summary</value>
+  </data>
+  <data name="WebPrivacyPolicyTitle" xml:space="preserve">
+    <value>Erklæring om beskyttelse af personlige oplysninger</value>
+  </data>
+  <data name="HelpLink" xml:space="preserve">
+    <value>http://community.f-secure.com/t5/Security-for-PC/tkb-p/Protection%40tkb?sort_by=-topicPublishDate&amp;page=1&amp;restrictionStates=no_filter&amp;labels=lokki</value>
+  </data>
+  <data name="TellAFriendLink" xml:space="preserve">
+    <value>http://www.fsecure.com/lokki</value>
+  </data>
+  <data name="TellAFriendMessage" xml:space="preserve">
+    <value>Hej! Jeg bruger F-Secure Lokki, den private app til deling af lokalitet, som er nem, sikker og gratis. Gå til f-secure.com/lokki for at installere den.</value>
+  </data>
+  <data name="InvitingEmailNotFound" xml:space="preserve">
+    <value>Vi kan ikke matche e-mailen med en kontakt for at vise foto og aktivere beskedfunktioner. Det kan ske med sammenkædede konti.
+Vil du føje e-mailadressen til din kontakt?</value>
+  </data>
+  <data name="Inviting" xml:space="preserve">
+    <value>Invitation</value>
+    <comment>The title for inviting messageboxes</comment>
+  </data>
+  <data name="InvitingConfirmMessage" xml:space="preserve">
+    <value>Vil du sende invitation til {0}?</value>
+    <comment>{0} replaced with email address</comment>
+  </data>
+  <data name="ApiError" xml:space="preserve">
+    <value>Der opstod en fejl, prøv igen.</value>
+  </data>
+  <data name="ErrorNoLocationService" xml:space="preserve">
+    <value>Placeringstjenester er ikke aktiveret for Lokki. Aktiver placeringstjenester for Lokki i systemindstillingerne.</value>
+  </data>
+  <data name="IAgree" xml:space="preserve">
+    <value>Jeg accepterer</value>
+  </data>
+  <data name="SendLog" xml:space="preserve">
+    <value>Send logfil</value>
+  </data>
+  <data name="CrashDialogMessage" xml:space="preserve">
+    <value>{0} ser ud til at være gået ned. Vil du hjælpe med at forbedre det ved at sende en anonym nedbrudsrapport?
+
+Følgende e-mail indeholder diagnostiske data om appen.</value>
+  </data>
+  <data name="CrashDialogTitle" xml:space="preserve">
+    <value>Nedbrudsrapport</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SettingsLokkiId" xml:space="preserve">
+    <value>Dit Lokki-id er {0}</value>
+  </data>
+  <data name="SettingsLokkiIdDescription" xml:space="preserve">
+    <value>Dine venner skal bruge denne e-mail, så du kan se dem i Lokki.</value>
+  </data>
+  <data name="SettingsMapMode" xml:space="preserve">
+    <value>KORTTILSTAND</value>
+  </data>
+  <data name="SettingsMyVisibility" xml:space="preserve">
+    <value>MIN SYNLIGHED</value>
+  </data>
+  <data name="TutorialWelcome" xml:space="preserve">
+    <value>Velkommen til F-Secure Lokki</value>
+  </data>
+  <data name="TutorialYouAreHere" xml:space="preserve">
+    <value>Du er her</value>
+  </data>
+  <data name="ButtonLater" xml:space="preserve">
+    <value>Senere</value>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="TutorialAddFriend" xml:space="preserve">
+    <value>Det ser ud til, at du ikke 
+har nogen venner i Lokki endnu.
+Vil du tilføje nogen?</value>
+  </data>
+  <data name="TutorialCanSeeYou" xml:space="preserve">
+    <value>{0} kan nu se dig i Lokki. Du vil kunne se dine venner i Lokki, når de giver dig adgang. Tilføj flere venner via knappen "+".</value>
+  </data>
+  <data name="SettingInvisible" xml:space="preserve">
+    <value>Usynlig</value>
+  </data>
+  <data name="SettingVisible" xml:space="preserve">
+    <value>Synlig</value>
+  </data>
+  <data name="MapModeAerial" xml:space="preserve">
+    <value>Satellit</value>
+  </data>
+  <data name="MapModeHybrid" xml:space="preserve">
+    <value>Hybrid</value>
+  </data>
+  <data name="MapModeRoad" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="MapModeTerrain" xml:space="preserve">
+    <value>Terræn</value>
+  </data>
+  <data name="MenuButtonAdd" xml:space="preserve">
+    <value>Tilføj</value>
+  </data>
+  <data name="MenuButtonInvisible" xml:space="preserve">
+    <value>Usynlig</value>
+  </data>
+  <data name="MenuButtonVisible" xml:space="preserve">
+    <value>Synlig</value>
+  </data>
+  <data name="PlacesLimitReached" xml:space="preserve">
+    <value>Du kan ikke oprette flere steder i den gratis version</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Annuller</value>
+  </data>
+  <data name="ButtonDone" xml:space="preserve">
+    <value>Udført</value>
+  </data>
+  <data name="ContextMenuDelete" xml:space="preserve">
+    <value>Slet</value>
+  </data>
+  <data name="ContextMenuEdit" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
+  <data name="PivotMap" xml:space="preserve">
+    <value>Kort</value>
+    <comment>The title of map pivot</comment>
+  </data>
+  <data name="PivotPlaces" xml:space="preserve">
+    <value>Steder</value>
+    <comment>The title of places pivot</comment>
+  </data>
+  <data name="PlaceEditorAdd" xml:space="preserve">
+    <value>Tilføj et sted</value>
+    <comment>Shown in editor when adding a new place</comment>
+  </data>
+  <data name="PlaceEditorEdit" xml:space="preserve">
+    <value>Rediger navnet</value>
+    <comment>Shown in editor when editing existing place</comment>
+  </data>
+  <data name="PlaceEditorNameHelp" xml:space="preserve">
+    <value>Skriv et navn til dette sted</value>
+    <comment>Help text for name editor</comment>
+  </data>
+  <data name="PlacesHelp" xml:space="preserve">
+    <value>Tryk langt på kortet for at oprette dit første sted, eller tryk på &quot;+&quot;-tegnet i menuen for at tilføje stedet på din nuværende placering.</value>
+  </data>
+  <data name="PlacesHelpTitle" xml:space="preserve">
+    <value>Tilføj sted</value>
+  </data>
+  <data name="SignupButton" xml:space="preserve">
+    <value>SIGNUPBUTTON</value>
+  </data>
+  <data name="NotificationYouAreInvisible" xml:space="preserve">
+    <value>NOTIFICATIONYOUAREINVISIBLE</value>
+  </data>
+  <data name="NotificationYouAreVisible" xml:space="preserve">
+    <value>NOTIFICATIONYOUAREVISIBLE</value>
+  </data>
+  <data name="PivotMyPeople" xml:space="preserve">
+    <value>PIVOTMYPEOPLE</value>
+  </data>
+  <data name="AppRaterDoYouLikeQuestion" xml:space="preserve">
+    <value>APPRATERDOYOULIKEQUESTION</value>
+  </data>
+  <data name="AppRaterDoYouLikeTitle" xml:space="preserve">
+    <value>APPRATERDOYOULIKETITLE</value>
+  </data>
+  <data name="AppRaterFeedBackEmailSubject" xml:space="preserve">
+    <value>APPRATERFEEDBACKEMAILSUBJECT</value>
+  </data>
+  <data name="AppRaterNo" xml:space="preserve">
+    <value>APPRATERNO</value>
+  </data>
+  <data name="AppRaterNoThanks" xml:space="preserve">
+    <value>APPRATERNOTHANKS</value>
+  </data>
+  <data name="AppRaterRemindLater" xml:space="preserve">
+    <value>APPRATERREMINDLATER</value>
+  </data>
+  <data name="AppRaterReviewQuestion" xml:space="preserve">
+    <value>APPRATERREVIEWQUESTION</value>
+  </data>
+  <data name="AppRaterReviewQuestionTitle" xml:space="preserve">
+    <value>APPRATERREVIEWQUESTIONTITLE</value>
+  </data>
+  <data name="AppRaterSendFeedbackBodyWhenUserDoesNotLike" xml:space="preserve">
+    <value>APPRATERSENDFEEDBACKBODYWHENUSERDOESNOTLIKE</value>
+  </data>
+  <data name="AppRaterSendFeedbackQuestion" xml:space="preserve">
+    <value>APPRATERSENDFEEDBACKQUESTION</value>
+  </data>
+  <data name="AppRaterYes" xml:space="preserve">
+    <value>APPRATERYES</value>
+  </data>
+</root>

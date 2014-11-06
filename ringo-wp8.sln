@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ringo-wp8", "ringo-wp8.csproj", "{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationReporterTaskAgent", "LocationReporterTaskAgent\LocationReporterTaskAgent.csproj", "{315A830D-8E41-4895-B4A1-A60D62096532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LokkiCommon", "Lokki\LokkiCommon.csproj", "{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPCommon", "WPCommon\WPCommon.csproj", "{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BetaRelease|Any CPU = BetaRelease|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		StoreScreenshots|Any CPU = StoreScreenshots|Any CPU
+		TestAutomation|Any CPU = TestAutomation|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.BetaRelease|Any CPU.ActiveCfg = BetaRelease|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.BetaRelease|Any CPU.Build.0 = BetaRelease|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.BetaRelease|Any CPU.Deploy.0 = BetaRelease|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.StoreScreenshots|Any CPU.ActiveCfg = StoreScreenshots|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.StoreScreenshots|Any CPU.Build.0 = StoreScreenshots|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.StoreScreenshots|Any CPU.Deploy.0 = StoreScreenshots|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.TestAutomation|Any CPU.ActiveCfg = Release|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.TestAutomation|Any CPU.Build.0 = Release|Any CPU
+		{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}.TestAutomation|Any CPU.Deploy.0 = Release|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.BetaRelease|Any CPU.ActiveCfg = BetaRelease|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.BetaRelease|Any CPU.Build.0 = BetaRelease|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.StoreScreenshots|Any CPU.ActiveCfg = Debug|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.StoreScreenshots|Any CPU.Build.0 = Debug|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.TestAutomation|Any CPU.ActiveCfg = Release|Any CPU
+		{315A830D-8E41-4895-B4A1-A60D62096532}.TestAutomation|Any CPU.Build.0 = Release|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.BetaRelease|Any CPU.ActiveCfg = BetaRelease|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.BetaRelease|Any CPU.Build.0 = BetaRelease|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.StoreScreenshots|Any CPU.ActiveCfg = Debug|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.StoreScreenshots|Any CPU.Build.0 = Debug|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.TestAutomation|Any CPU.ActiveCfg = Release|Any CPU
+		{9874A19A-5AEB-4CF1-BD61-5B9CB0303FA5}.TestAutomation|Any CPU.Build.0 = Release|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.BetaRelease|Any CPU.ActiveCfg = BetaRelease|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.BetaRelease|Any CPU.Build.0 = BetaRelease|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.StoreScreenshots|Any CPU.ActiveCfg = Debug|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.StoreScreenshots|Any CPU.Build.0 = Debug|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.TestAutomation|Any CPU.ActiveCfg = TestAutomation|Any CPU
+		{1902D7B8-7E7A-4276-9505-737EF2EBC3AC}.TestAutomation|Any CPU.Build.0 = TestAutomation|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

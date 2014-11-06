@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="FSecure.Lokki.Controls.BubbleControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             d:DesignHeight="480"
+             d:DesignWidth="480">
+
+    <!-- Load theme styles -->
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Colors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot"
+          Tap="LayoutRoot_Tap">
+        <Grid.Background>
+            <SolidColorBrush Color="Black" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="PointerRectangle"
+                   HorizontalAlignment="Left"
+                   Height="30"
+                   Margin="-15,-15,0,0"
+                   StrokeThickness="0"
+                   VerticalAlignment="Top"
+                   Width="30">
+
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{StaticResource C8}" />
+            </Rectangle.Fill>
+            <Rectangle.Projection>
+                <PlaneProjection RotationZ="45" />
+            </Rectangle.Projection>
+        </Rectangle>
+
+        <Border x:Name="BubbleContainer"
+                CornerRadius="15"
+                Child="{Binding Child}"
+                Margin="40,0">
+
+            <Border.Background>
+                <SolidColorBrush Color="{StaticResource C8}" />
+            </Border.Background>
+
+        </Border>
+
+    </Grid>
+</UserControl>

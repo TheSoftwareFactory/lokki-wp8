@@ -1,0 +1,52 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+             xmlns:controls="clr-namespace:FSecure.Lokki.Controls"
+             xmlns:Lokki="clr-namespace:FSecure.Lokki"
+             x:Class="FSecure.Lokki.Controls.PlacesList"
+             mc:Ignorable="d"
+             d:DesignHeight="480"
+             d:DesignWidth="480">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Colors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <UserControl.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal" />
+    </UserControl.FontFamily>
+    <UserControl.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal" />
+    </UserControl.FontSize>
+    <UserControl.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush" />
+    </UserControl.Foreground>
+
+    <Grid x:Name="LayoutRoot">
+
+        <TextBlock x:Name="TutorialText"
+                   TextWrapping="Wrap"
+                   Margin="32,32">
+            <Run FontSize="{StaticResource PhoneFontSizeLarge}"
+                 Text="{Binding LocalizedResources.PlacesHelpTitle, Source={StaticResource LocalizedStrings}}" />
+            <LineBreak />
+            <LineBreak />
+            <Run Text="{Binding LocalizedResources.PlacesHelp, Source={StaticResource LocalizedStrings}}" />
+        </TextBlock>
+
+        <ScrollViewer>
+            <StackPanel x:Name="PlaceStack">
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+
+</UserControl>

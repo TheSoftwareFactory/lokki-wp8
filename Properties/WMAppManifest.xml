@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment AppPlatformVersion="8.0" xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment">
+  <DefaultLanguage code="en" xmlns="" />
+  <Languages xmlns="">
+    <Language code="en" />
+    <Language code="da" />
+    <Language code="de" />
+    <Language code="es" />
+    <Language code="fi" />
+    <Language code="fr" />
+    <Language code="fr-CA" />
+    <Language code="it" />
+    <Language code="nl" />
+    <Language code="pt" />
+    <Language code="pt-BR" />
+    <Language code="ru" />
+    <Language code="sv" />
+    <Language code="zh-CN" />
+    <Language code="zh-TW" />
+  </Languages>
+  <App Author="F-Secure Corporation" BitsPerPixel="32" Description="Lokki is a personal location app for your closest circle, family and friends. " Genre="apps.normal" ProductID="{2dc58582-49fe-497a-95e6-a26cd469106f}" Publisher="F-Secure Corporation" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="F-Secure Lokki" Version="3.1.0.0" xmlns="">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MAP" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Pages/SignupPage.xaml">
+        <BackgroundExecution>
+          <ExecutionType Name="LocationTracking" />
+        </BackgroundExecution>
+      </DefaultTask>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TaskName="_default" TokenID="ringo_wp8Token">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\TileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\TileMedium.png</BackgroundImageURI>
+          <Title>F-Secure Lokki</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
+          <HasLarge>False</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

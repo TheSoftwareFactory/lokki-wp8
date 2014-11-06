@@ -1,0 +1,72 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+             x:Class="FSecure.Lokki.Controls.PlaceListItemControl"
+             mc:Ignorable="d"
+             d:DesignHeight="184"
+             d:DesignWidth="616"
+             UseLayoutRounding="True">
+
+    <UserControl.Resources>
+
+        <Color x:Key="C6">#FFC7C7C7</Color>
+    </UserControl.Resources>
+    <UserControl.FontFamily>
+        <StaticResource ResourceKey="PhoneFontFamilyNormal" />
+    </UserControl.FontFamily>
+    <UserControl.FontSize>
+        <StaticResource ResourceKey="PhoneFontSizeNormal" />
+    </UserControl.FontSize>
+    <UserControl.Foreground>
+        <StaticResource ResourceKey="PhoneForegroundBrush" />
+    </UserControl.Foreground>
+
+    <Grid x:Name="LayoutRoot"
+          Height="140">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill"
+                        ImageSource="/Assets/Place01.jpg" />
+        </Grid.Background>
+
+        <Border BorderThickness="0,0,0,2">
+            <Border.BorderBrush>
+                <SolidColorBrush Color="{StaticResource C6}" />
+            </Border.BorderBrush>
+
+            <Grid>
+
+                <ScrollViewer VerticalScrollBarVisibility="Disabled"
+                              HorizontalScrollBarVisibility="Auto"
+                              HorizontalContentAlignment="Left"
+                              MaxHeight="140">
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Margin="80,0,0,0"
+                                x:Name="AvatarStack">
+                    </StackPanel>
+
+                </ScrollViewer>
+
+                <TextBlock x:Name="NameText"
+                           Text="{Binding Name}"
+                           VerticalAlignment="Bottom"
+                           HorizontalAlignment="Left"
+                           Margin="24,0,0,8" />
+            </Grid>
+        </Border>
+
+        <toolkit:ContextMenuService.ContextMenu>
+            <toolkit:ContextMenu>
+                <toolkit:MenuItem Header="{Binding LocalizedResources.ContextMenuEdit, Source={StaticResource LocalizedStrings}}"
+                                  Tap="MenuItemEdit_Tap" />
+                <toolkit:MenuItem Header="{Binding LocalizedResources.ContextMenuDelete, Source={StaticResource LocalizedStrings}}"
+                                  Tap="MenuItemDelete_Tap" />
+            </toolkit:ContextMenu>
+        </toolkit:ContextMenuService.ContextMenu>
+
+    </Grid>
+</UserControl>

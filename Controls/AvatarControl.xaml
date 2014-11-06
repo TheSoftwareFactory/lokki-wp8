@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="FSecure.Lokki.Controls.AvatarControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing"
+             xmlns:em="clr-namespace:Microsoft.Expression.Media;assembly=Microsoft.Expression.Drawing"
+             xmlns:converters="clr-namespace:FSecure.Converters"
+             mc:Ignorable="d"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             d:DesignHeight="80"
+             d:DesignWidth="80">
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Colors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <converters:BooleanVisibilityConverter x:Key="BooleanVisibilityConverter" />
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+         
+        <es:Arc x:Name="AvatarArc"
+                EndAngle="360"
+                Margin="0,0,0,0"
+                ArcThickness="100"
+                ArcThicknessUnit="Percent"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+            <es:Arc.Fill>
+                <ImageBrush Stretch="UniformToFill"
+                            ImageSource="/Assets/DefaultAvatar.png" />
+            </es:Arc.Fill>
+        </es:Arc>
+
+        <Grid Height="72"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <TextBlock x:Name="InitialsText"
+                       FontSize="{StaticResource PhoneFontSizeExtraLarge}"
+                       Text="??"
+                       TextAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="0,-6,0,0" />
+        </Grid>
+
+        <!-- Indicator shown if user has disabled visibility -->
+        <Border x:Name="VisibilityIndicator"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Width="32"
+                Height="32"
+                CornerRadius="16"
+                BorderThickness="0"
+                Margin="0,0,0,0">
+
+            <Border.Background>
+                <SolidColorBrush Color="{StaticResource C5}" />
+            </Border.Background>
+
+            <Image  Source="/Assets/InvisibleIcon.png"
+                    Margin="4,0" />
+        </Border>
+    </Grid>
+</UserControl>

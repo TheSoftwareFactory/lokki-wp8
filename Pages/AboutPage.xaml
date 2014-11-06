@@ -1,0 +1,171 @@
+﻿<phone:PhoneApplicationPage x:Class="lokki_wp8.Pages.AboutPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+                            xmlns:controls="clr-namespace:FSecure.Lokki.Controls"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            mc:Ignorable="d"
+                            shell:SystemTray.ForegroundColor="#FEFFFFFF"
+                            shell:SystemTray.IsVisible="True"
+                            shell:SystemTray.Opacity="0">
+
+    <phone:PhoneApplicationPage.Style>
+        <StaticResource ResourceKey="DefaultPageTransition" />
+    </phone:PhoneApplicationPage.Style>
+
+    <phone:PhoneApplicationPage.Resources>
+        <ResourceDictionary>
+            <!-- Customization -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Colors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="HyperlinkButtonStyle"
+                   TargetType="HyperlinkButton">
+                <Setter Property="Foreground"
+                        Value="{StaticResource PhoneForegroundBrush}" />
+                <Setter Property="Background"
+                        Value="Transparent" />
+                <Setter Property="FontSize"
+                        Value="{StaticResource PhoneFontSizeMedium}" />
+                <Setter Property="Padding"
+                        Value="0" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="HyperlinkButton">
+                            <Border Background="Transparent">
+                                <Border Height="64"
+                                        Background="{TemplateBinding Background}"
+                                        Padding="{TemplateBinding Padding}"
+                                        Margin="16,0,0,0">
+                                    <TextBlock x:Name="extElement"
+                                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               Text="{TemplateBinding Content}"
+                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                        <TextBlock.Foreground>
+                                            <SolidColorBrush Color="{StaticResource C4}" />
+                                        </TextBlock.Foreground>
+                                    </TextBlock>
+                                </Border>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <controls:HeaderPanel x:Name="HeaderPanel"
+                              Title="{Binding LocalizedResources.MenuAbout, Source={StaticResource LocalizedStrings}}"
+                              IsAddContactButtonVisible="False"
+                              IsVisibilityButtonVisible="False" />
+
+        <Grid Grid.Row="1"
+            x:Name="Banner"
+            Tap="Banner_Tap">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="224" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image Source="/Assets/TileMedium.png"
+                   Height="200"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   Margin="0,-8,0,0"></Image>
+
+            <Image Source="/Assets/DesignFrom.png"
+                   HorizontalAlignment="Right"
+                   Width="64"
+                   Height="62"
+                   Margin="0,0,48,48"
+                   VerticalAlignment="Bottom"></Image>
+
+            <TextBlock VerticalAlignment="Bottom"
+                       FontSize="16"
+                       TextAlignment="Center"
+                       Margin="0,0,0,8">
+                <Run x:Name="VersionText"
+                     Text="Version: x.x" />
+                <LineBreak />
+                <Run Text="{Binding LocalizedResources.WebFSecureTitle, Source={StaticResource LocalizedStrings}}" />
+            </TextBlock>
+
+            <ScrollViewer Grid.Row="1">
+                <Grid Background="White">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <HyperlinkButton Grid.Row="0"
+                                     Content="{Binding LocalizedResources.WebFSecureTitle, Source={StaticResource LocalizedStrings}}"
+                                     NavigateUri="{Binding LocalizedResources.WebFSecureLink, Source={StaticResource LocalizedStrings}}"
+                                     FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                                     TargetName="_blank"
+                                     HorizontalAlignment="Left"
+                                     Style="{StaticResource HyperlinkButtonStyle}" />
+
+                    <Rectangle Grid.Row="1"
+                               Fill="{StaticResource BRUSH_C6}"
+                               Height="1"
+                               Margin="16,0,0,0" />
+
+                    <HyperlinkButton Grid.Row="2"
+                                     Content="{Binding LocalizedResources.WebPrivacyPolicyTitle, Source={StaticResource LocalizedStrings}}"
+                                     NavigateUri="{Binding LocalizedResources.WebPrivacyPolicyLink, Source={StaticResource LocalizedStrings}}"
+                                     FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                                     TargetName="_blank"
+                                     HorizontalAlignment="Left"
+                                     Style="{StaticResource HyperlinkButtonStyle}" />
+
+                    <Rectangle Grid.Row="3"
+                               Fill="{StaticResource BRUSH_C6}"
+                               Height="1"
+                               Margin="16,0,0,0" />
+
+                    <!-- License information
+                    <Grid Grid.Row="4">
+                        <TextBlock Margin="32,0" FontSize="{StaticResource PhoneFontSizeMediumLarge}">
+                        	<TextBlock.Foreground>
+                        		<SolidColorBrush Color="{StaticResource C4}"/>
+                        	</TextBlock.Foreground>License Information</TextBlock>
+                        <TextBlock></TextBlock>
+
+                        <TextBlock Margin="32,0" FontSize="{StaticResource PhoneFontSizeMediumLarge}">
+                        	<TextBlock.Foreground>
+                        		<SolidColorBrush Color="{StaticResource C4}"/>
+                        	</TextBlock.Foreground>License Information</TextBlock>
+                        <TextBlock>
+                            
+                        </TextBlock>
+                    </Grid>
+                    -->
+                </Grid>
+
+            </ScrollViewer>
+
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="FSecure.Lokki.Controls.HeaderPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             FontFamily="{StaticResource PhoneFontFamilyNormal}"
+             FontSize="{StaticResource PhoneFontSizeNormal}"
+             Foreground="{StaticResource PhoneForegroundBrush}"
+             d:DesignHeight="480"
+             d:DesignWidth="480"
+             UseLayoutRounding="True">
+
+    <UserControl.Resources>
+
+        <Color x:Key="Main">#FF1A74B9</Color>
+
+        <Color x:Key="TransparentTouchable">#01000000</Color>
+        <SolidColorBrush x:Key="BRUSH_TransparentTouchable"
+                         Color="{StaticResource TransparentTouchable}" />
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Height="80">
+
+        <Grid.Background>
+            <SolidColorBrush Color="{StaticResource Main}" />
+        </Grid.Background>
+
+        <Grid VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="64" />
+
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="TitleText"
+                       Grid.Column="1"
+                       Text="{Binding Title}"
+                       FontSize="{StaticResource PhoneFontSizeLarge}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Margin="0,8,0,8" />
+
+            <Grid x:Name="AddContactButton"
+                  Background="{StaticResource BRUSH_TransparentTouchable}"
+                  Tap="AddContactButton_Tap">
+                <Image Source="/Assets/AddIcon.png"
+                       Margin="24,8,0,8" />
+            </Grid>
+
+            <Grid x:Name="VisibilityButton"
+                  Background="{StaticResource BRUSH_TransparentTouchable}"
+                  Grid.Column="2"
+                  Tap="VisibilityButton_Tap">
+                <Image x:Name="VisibilityIcon"
+                       Source="/Assets/VisibleIcon.png"
+                       Margin="0,8,24,8" />
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>
